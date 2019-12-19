@@ -17,10 +17,11 @@ class lexer {
 private:
     string tok;
     vector<string> tokens;
-
+public:
     lexer();
     ~lexer();
     vector<string> lex(string fileName);
+    bool isNumber(string s);
 };
 
 
